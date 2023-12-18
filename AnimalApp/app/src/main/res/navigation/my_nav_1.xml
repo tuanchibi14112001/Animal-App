@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_1"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.animalapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_animalTypeFragment"
+            app:destination="@id/animalTypeFragment"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalTypeFragment"
+        android:name="com.example.animalapp.AnimalTypeFragment"
+        android:label="fragment_animal_type"
+        tools:layout="@layout/fragment_animal_type">
+        <action
+            android:id="@+id/action_animalTypeFragment_to_listAnimalFragment"
+            app:destination="@id/listAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listAnimalFragment"
+        android:name="com.example.animalapp.ListAnimalFragment"
+        android:label="fragment_list_animal"
+        tools:layout="@layout/fragment_list_animal" >
+        <action
+            android:id="@+id/action_listAnimalFragment_to_animalDetail2"
+            app:destination="@id/animalDetail2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.animalapp.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/animalDetail2"
+        android:name="com.example.animalapp.AnimalDetail2"
+        android:label="fragment_animal_detail2"
+        tools:layout="@layout/fragment_animal_detail2" >
+        <argument
+            android:name="animal_id"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+</navigation>
