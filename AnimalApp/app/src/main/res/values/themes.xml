@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.AnimalApp" parent="Base.Theme.AnimalApp" />
+    <style name="StyleLoading" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>

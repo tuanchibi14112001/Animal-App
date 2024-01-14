@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/animalTypeFragment"
-        android:name="com.example.animalapp.AnimalTypeFragment"
+        android:name="com.example.animalapp.ui.fragment.AnimalTypeFragment"
         android:label="fragment_animal_type"
         tools:layout="@layout/fragment_animal_type">
         <action

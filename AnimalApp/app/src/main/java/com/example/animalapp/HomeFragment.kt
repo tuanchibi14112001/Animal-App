@@ -43,6 +43,7 @@ class HomeFragment : Fragment() {
         binding.btnGame.setOnClickListener{
             it.findNavController().navigate(R.id.action_homeFragment_to_blankFragment)
         }
+
     }
 
     override fun onStop() {
