@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
-    android:background="@drawable/main_back_ground">
+    android:background="@drawable/main_back_ground"
+    >
 
     <Button
         android:id="@+id/btnInfo"
